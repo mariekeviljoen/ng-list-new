@@ -1,0 +1,41 @@
+<div class="container">
+      <h3>PHP post to CSV</h3>
+          <form name="form1" method="post" action="partials/form.php">
+            <p>
+              <label for="name">Name: </label>
+              <input type="text" ng-model="name" name="name" id="name" placeholder="Your brewery name" autofocus required>
+            </p>
+            <p>
+              <label for="email">Email: </label>
+              <input type="email" name="email" id="email">
+            </p>
+            <p>
+              <label for="cell">Cell: </label>
+              <input type="tel" name="cell" id="cell">
+            </p>
+            <p>
+              <label for="dob">Date of birth: </label>
+              <input type="date" name="dob" id="dob">
+            </p>
+            <p>
+                <button type="submit" name="submit" id="submit" value="Submit">Submit</button>
+            </p>
+          </form>
+<br><br>
+   
+  <h3>BS3 &amp; Angular modal on click </h3>  
+ <div ng-controller="MainCtrl" class="container">
+      <button ng-click="toggleModal('Success')" class="btn btn-default">Success</button>
+      <button ng-click="toggleModal('Remove')" class="btn btn-default">Remove</button>
+      <button ng-click="toggleModal('Deny')" class="btn btn-default">Deny</button>
+      <button ng-click="toggleModal('Cancel')" class="btn btn-default">Cancel</button>
+      <modal visible="showModal">
+          Any additional data / buttons
+      </modal>
+</div>   
+    
+    
+    
+    
+</div>
+

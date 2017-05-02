@@ -1,0 +1,94 @@
+<div class="container">
+    <br><!--
+    <div class="col-sm-6">
+      <h3>ng to Firebase database</h3>
+          <form name="addform2" ng-submit="addBrewery" novalidate>
+          <div class="form-group">
+            <label>Brewery Name</label>
+            <input type="text" class="form-control" name="breweryname" placeholder="Brewery Name" ng-model="breweryname">
+          </div>
+          <div class="form-group">
+            <label>Short Name</label>  
+            <input type="text" class="form-control" name="shortname" placeholder="brewery_name" ng-model="shortname">
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" name="email" placeholder="brewery@gmail.com" ng-model="email">
+          </div>
+          <div class="form-group">
+            <label>Website URL</label>
+            <input type="text" class="form-control" name="weburl" placeholder="http://www.brewery.com" ng-model="weburl">
+          </div>
+          <div class="form-group">
+            <label>Contact Number</label>
+            <input type="text" class="form-control" name="tel" placeholder="082 5555555" ng-model="tel">
+          </div> 
+          <div class="form-group">
+            <label>Address</label>
+            <input type="text" class="form-control" name="address" placeholder="77 Joy Street, Roodepoort" ng-model="address">
+          </div>
+          <div class="form-group">
+            <label>Category</label>
+            <select name="category" ng-model="category">
+              <option value="">---Please select---</option>
+              <option value="ales">Ales</option> 
+              <option value="beers">Beers</option>
+              <option value="lagers">Lagers</option>
+              <option value="stouts">Stouts</option>    
+            </select><br>
+          </div>
+          <div class="form-group">
+            <label>Region</label>  
+            <select name="region" ng-model="region">
+              <option value="">---Please select---</option>
+              <option value="EC">Eastern Cape</option> 
+              <option value="FS">Free State</option>
+              <option value="G">Gauteng</option>
+              <option value="KZN">KwaZulu-Natal</option>
+              <option value="L">Limpopo</option> 
+              <option value="M">Mpumalanga</option> 
+              <option value="NC">Northern Cape</option> 
+              <option value="NW">North West</option> 
+              <option value="WC">Wester Cape</option>     
+            </select><br>
+          </div>
+          <div class="form-group">
+            <label>Listing Option</label>
+            <select name="option" ng-model="option">
+              <option value="">---Please select---</option>
+              <option value="starter">Starter</option> 
+              <option value="crafted">Crafted</option>
+              <option value="master">Master</option>   
+            </select><br><br>
+              <div class="form-group">
+                <label>Description</label><br>
+                  <textarea rows="5" type="text" class="form-control" name="description" placeholder="Description" ng-model="description"></textarea>
+              </div>
+              
+          </div>      
+          <button type="submit" class="btn">Add</button>
+        </form>
+   </div>
+    
+    
+    <div class="col-sm-6">
+        <h3>Breweries</h3>
+        <ul class="brewerylist">
+            <li class="brewery cf" ng-repeat="brewery in breweries">
+              <a href="#/detail2/{{brewery.shortname}}">
+                <h4> {{brewery.breweryname}} </h4>
+              </a>
+            </li>
+        </ul>
+    
+    </div>-->
+    
+    <div class="col-sm-4">
+        <form class="cf" name="myform" ng-submit="addItem()" novalidate>
+            <input type="text" name="name" placeholder="Name" ng-model="name">
+            <button type="submit" class="btn">+</button>
+        </form>
+    </div>
+    
+</div>
+

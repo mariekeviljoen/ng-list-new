@@ -1,0 +1,32 @@
+<section class="categorypage">
+    
+    <div class="categoryFilter">
+    
+       <label class="formgroup">
+        <h3>Category</h3>  
+      <select ng-model="categoryList">
+        <option value="">Select a Category</option>
+        <option value="Ales">Ales</option>
+        <option value="Beers">Beers</option>
+        <option value="Lagers">Lagers</option> 
+        <option value="Stouts">Stouts</option> 
+      </select>
+    </label>
+    </div>
+    
+    <br><br>
+<div class="col-xs-12 col-sm-5">    
+  <ul class="itemlist">
+    <li ng-animate="'animate'" class="item cf" ng-repeat="item in artists | filter: categoryList">
+      <a href="#/details/{{artists.indexOf(item)}}">
+        <img ng-src="images/artists/{{item.shortname}}_tn.jpg" alt="Photo of {{item.name}}">
+        <div class="info">
+          <h4>{{item.name}}</h4>
+          <h5>{{item.region}} | {{item.category}}</h5>
+        </div>
+      </a>
+    </li>
+  </ul> 
+</div> 
+    
+</section>

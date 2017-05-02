@@ -1,0 +1,34 @@
+<section class="regionpage">
+    
+    <label class="formgroup">
+        <h3>Regions</h3>  
+      <select ng-model="regionList">
+        <option value="">Select a Region</option>
+        <option value="Eastern Cape">Eastern Cape</option>
+        <option value="Free State">Free State</option>
+        <option value="Gauteng">Gauteng</option> 
+        <option value="KwaZulu-Natal">KwaZulu-Natal</option>
+        <option value="Mpumalanga">Mpumalanga</option>
+        <option value="Northern Cape">Northern Cape</option>
+        <option value="Limpopo Province">Limpopo Province</option>
+        <option value="North West Province">North West Province</option>
+        <option value="Western Cape">Western Cape</option>  
+      </select>
+    </label>
+    
+    <br><br>
+<div class="col-xs-12 col-sm-5">
+  <ul class="itemlist">
+    <li class="item cf" ng-repeat="item in artists | filter: regionList">
+      <a href="#/details/{{artists.indexOf(item)}}">
+        <img ng-src="images/artists/{{item.shortname}}_tn.jpg" alt="Photo of {{item.name}}">
+        <div class="info">
+          <h4>{{item.name}}</h4>
+          <h5>{{item.region}} | {{item.category}}</h5>
+        </div>
+      </a>
+    </li>
+  </ul> 
+</div>
+    
+</section>

@@ -1,0 +1,45 @@
+<section class="artistpage">
+  <div class="search">
+    <h4>Search by Name | Category | Region</h4>
+    <label>Search: </label>
+    <input ng-model="query" placeholder="Search for clients" autofocus>
+      <br>
+    <label class="formgroup">by:
+      <select ng-model="artistOrder">
+        <option value="name">Name</option>
+        <option value="category">Category</option>
+        <option value="region">Region</option>  
+      </select>
+    </label>
+      &nbsp;&nbsp;
+    <label class="formgroup">
+      <input type="radio" ng-model="direction" name="direction" checked>
+      ascending
+     </label>
+      &nbsp;&nbsp;
+    <label class="formgroup">
+      <input type="radio" ng-model="direction" name="direction" value="reverse">
+      descending
+    </label>
+      
+      <br><br>
+  
+  </div>
+    
+   
+  <div class="col-xs-12 col-sm-5"> 
+    <ul class="itemlist" ng-model="query">
+    <li ng-animate="'animate'" class="item cf" ng-repeat="item in artists | filter: query | orderBy: artistOrder:direction">
+      <a href="#/details/{{artists.indexOf(item)}}">
+        <img ng-src="images/artists/{{item.shortname}}_tn.jpg" alt="Photo of {{item.name}}">
+        <div class="info">
+          <h4>{{item.name}}</h4>
+          <h5>{{item.region}} | {{item.category}}</h5>
+        </div>
+      </a>
+    </li>
+  </ul>
+ </div>    
+    
+    
+</section>

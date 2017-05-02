@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body  {
+  font-family: 'Roboto', sans-serif;
+  padding-top: 70px;
+    padding-bottom: 70px;
+    font-size: 12px;
+  line-height: 160%;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  color: #475b62;
+  text-shadow: 1px 1px rgb(255,255,255, 1);
+}
+
+a {
+  color: #145266;
+  font-family: 'Roboto', sans-serif;
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.3rem;
+  color: #444;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+    display: block;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/*itemlist*/
+
+.itemlist {
+   background-color: #f3f3f3; 
+    padding-left: 0;
+}
+
+.itemlist .item {
+  border-bottom: 1px solid #ccc; 
+  padding: 15px;
+}
+
+.itemlist .item:hover {
+  background-color: #fff;
+    opacity: 0.8;
+}
+
+.itemlist .item h4 {
+   margin-top:0; 
+}
+
+.itemlist .item img {
+    width: 60px;
+    float: left;
+    margin-right: 15px;
+}
+
+/*iteminfo*/
+
+.iteminfo {
+   width: 60%;
+    background-color: #f3f3f3;  
+    padding: 20px;
+}
+
+.iteminfo .btn {
+   background-color: #ccc; 
+}
+
+.iteminfo .info img {
+    width: 120px;
+    float: left;
+    margin-right: 15px;
+}
+
+.iteminfo .info {
+    
+}
+
+/*forms*/
+
+input, select, textarea {
+    width: 100%;
+    border-radius: 0;
+}
+
+select {
+    height: 30px;
+    border-radius: 0;
+}
+
+
+/*footer*/
+
+footer .nav>li>a {
+    padding: 10px 5px;
+}
